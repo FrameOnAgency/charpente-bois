@@ -1084,3 +1084,159 @@ footer {
 .beam-character:hover {
     transform: scale(1.05);
 }
+
+/* Location & Service Area Section */
+.location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.map-container {
+    position: relative;
+}
+
+.map-container iframe {
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.address-card {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: white;
+    padding: 20px 25px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.address-card i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.address-card h4 {
+    margin: 0 0 5px 0;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+.address-card p {
+    margin: 0;
+    color: #666;
+    line-height: 1.5;
+}
+
+.service-area-content {
+    padding: 20px;
+}
+
+.service-area-icon {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.service-area-icon i {
+    font-size: 2.5rem;
+    color: white;
+}
+
+.service-area-content h3 {
+    font-size: 2rem;
+    color: var(--text-color);
+    margin-bottom: 20px;
+    font-family: var(--font-heading);
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.intro-text strong {
+    color: var(--primary-color);
+}
+
+.coverage-details h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    color: var(--text-color);
+    margin-bottom: 15px;
+}
+
+.coverage-details h4 i {
+    color: var(--accent-color);
+}
+
+.coverage-details>p {
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.coverage-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+.coverage-list li {
+    padding: 10px 0;
+    font-size: 1.1rem;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.coverage-list i {
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.commitment-box {
+    background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 4px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.commitment-box i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.commitment-box p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsive Location Section */
+@media (max-width: 968px) {
+    .location-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .address-card {
+        position: static;
+        margin-top: 20px;
+    }
+}

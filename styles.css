@@ -332,6 +332,46 @@ ul {
     border-bottom-color: var(--primary-color);
 }
 
+/* Portfolio Link Section */
+.portfolio-link-section {
+    text-align: center;
+    margin-top: 50px;
+    padding-top: 40px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.portfolio-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 40px;
+    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: var(--transition);
+    box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+}
+
+.portfolio-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(139, 69, 19, 0.4);
+}
+
+.portfolio-btn i:first-child {
+    font-size: 1.3rem;
+}
+
+.portfolio-btn i:last-child {
+    transition: transform 0.3s;
+}
+
+.portfolio-btn:hover i:last-child {
+    transform: translateX(5px);
+}
+
 .service-card .icon {
     font-size: 3rem;
     color: var(--primary-color);
